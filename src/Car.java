@@ -64,6 +64,6 @@ public class Car {
 
 
     public String toString() {
-        return getBrand() + " " + getModel() + " " + getEngineVolume() + " " + getColor() + " " + getYear() + " " + getCountry() + " ";
+        return getBrand() + " " + getModel() + ", " + getEngineVolume() + ", " + getColor() + ", " + getYear() + ", " + getCountry() + ", ";
     }
 }
