@@ -67,6 +67,10 @@ public class Car {
         return getBrand() + " " + getModel() + ", " + getEngineVolume() + ", " + getColor() + ", " + getYear() + ", " + getCountry() + ", ";
     }
 
+    public static String validateCarOptions(String value, String aDefault) {
+        return validateCarOptions(value, "default");
+    }
+
     public static Integer validateYear(Integer value) {
         return value == null ? 2000 : value;
     }
