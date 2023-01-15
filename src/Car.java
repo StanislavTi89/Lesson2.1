@@ -1,10 +1,10 @@
 public class Car {
-    private String brand;
-    private String model;
-    private String engineVolume;
-    private String color;
-    private String year;
-    private String country;
+    private final String brand;
+    private final String model;
+    private final String engineVolume;
+    private final String color;
+    private final String year;
+    private final String country;
 
     public Car(String brand, String model, String engineVolume, String year, String country, String color) {
         this.brand = brand;
@@ -14,5 +14,9 @@ public class Car {
         this.year = year;
         this.country = country;
 
+    }
+
+    public String toString() {
+        return toString();
     }
 }
