@@ -66,4 +66,17 @@ public class Car {
     public String toString() {
         return getBrand() + " " + getModel() + ", " + getEngineVolume() + ", " + getColor() + ", " + getYear() + ", " + getCountry() + ", ";
     }
+
+    public static Integer validateYear(Integer value) {
+        return value == null ? 2000 : value;
+    }
+
+    public static double validateEngineVolume(double value) {
+        return value < 0 ? 1.5 : value;
+    }
+
+    public static String validateColor(String value) {
+        return value == null ? "Белый" : value;
+    }
+
 }
